@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <form>
+        <label for="name">Name: </label>
+        <input
+          id="name"
+          name="name"
+          type="text"
+          placeholder="Your name here"
+        />
+  
+        <label for="email">Email:</label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          placeholder="Your email here"
+          required
+        />
+  
+        <label for="password">Password:</label>
+        <input
+          id="password"
+          name="password"
+          type="password"
+          placeholder="Your password here"
+          required
+          minlength="6"
+        />
+  
+        <label for="password-confirm">Confirma contraseña:</label>
+        <input
+          id="password-confirm"
+          name="password-confirm"
+          type="password"
+          placeholder="Confirm your password here"
+          required
+          minlength="6"
+        />
+  
+        <button type="submit">Crear usuario</button>
+      </form>
+</body>
+</html>
