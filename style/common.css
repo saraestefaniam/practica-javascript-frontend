@@ -1,0 +1,31 @@
+:root {
+    --bg-color: #ffffff;
+    --main-text-color: #000;
+    --main-brand-color: #467074;
+    --main-brand-color-ligh:#b9eff7;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-bg {
+    background-color: var(--bg-color);
+}
+
+input {
+    background-color: transparent;
+    border: 1px solid #000;
+    color: var(--main-text-color);
+    width: 300px;
+}
+
+.form-container {
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+button {
+    background-color: transparent;
+    border-radius: 5px;
+}
