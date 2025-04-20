@@ -24,11 +24,11 @@ export const registerController = (form) => {
             errors.push("The passwords don't match")
         }
         
-        if (errors === 0) {
+        if (errors.length === 0) {
             handleCreateUser(name, email, password, form)
         } else {
             errors.forEach(error => {
-                const event = new CustomEvent('register-error', {
+                const event = new CustomEvent("register-error", {
                     detail: error
                 })
                 form.dispatchEvent(event)
@@ -39,7 +39,7 @@ export const registerController = (form) => {
     const handleCreateUser = async (name, email, password, form) => {
         try {
             await createUser(name, email, password)
-            const event = new CustomEvent('register-ok', {
+            const event = new CustomEvent("register-ok", {
                 detail: {
                     message: 'You have registered successfully',
                     type: 'success'
@@ -50,7 +50,7 @@ export const registerController = (form) => {
                 window.location = '/'
             }, 5000)
         } catch (error) {
-            const event = new CustomEvent('register-error', {
+            const event = new CustomEvent("register-error", {
                 detail: error
             })
             form.dispatchEvent(event)
