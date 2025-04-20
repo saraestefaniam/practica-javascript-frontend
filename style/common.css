@@ -29,3 +29,18 @@ button {
     background-color: transparent;
     border-radius: 5px;
 }
+
+.notification {
+    border: solid 1px;
+    padding: 1rem;
+}
+
+.notification.success {
+    background-color: lightblue;
+    border-color: rgb(0, 172, 230)
+}
+
+.notification.error {
+    background-color: lightcoral;
+    border-color: rgb(242, 8, 8);
+}
