@@ -11,18 +11,44 @@ export function loginController(loginForm) {
         const userEmail = userEmailElement.value
         const passwordElement = loginForm.querySelector("#password")
         const password = passwordElement.value
+        const errors = []
 
         const emailRegExp = new RegExp(REGEXP.mail)
         if(!emailRegExp.test(userEmail)) {
-            alert('Incorrect email format')
+            errors.push('Invalid email')
+        } 
+        
+        if (errors.length === 0) {
+            handleLoginUser(userEmail, password, loginForm)
         } else {
-            handleLoginUser(userEmail, password)
+            errors.forEach(error => {
+                const event = new CustomEvent("login-error", {
+                    detail: error
+                })
+                loginForm.dispatchEvent(event)
+            })
         }
     })
 
-    async function handleLoginUser(userEmail, password) {
-        const token = await loginUser(userEmail, password)
-
-        localStorage.setItem("token", token)
+    const handleLoginUser = async (userEmail, password, loginForm) => {
+        try {
+            const token = await loginUser(userEmail, password)
+            const event = new CustomEvent("login-ok", {
+                detail: {
+                    message: "You have logged in successfully",
+                    type: 'success'
+                }
+            })
+            loginForm.dispatchEvent(event)
+            setTimeout(() => {
+                window.location = '/'
+            }, 2000)
+            localStorage.setItem("token", token)
+        } catch (error) {
+            const event = new CustomeEvent("login-error", {
+                detail: error
+            })
+            loginForm.dispatchEvent(event)
+        }
     }
 }

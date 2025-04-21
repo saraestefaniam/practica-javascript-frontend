@@ -3,7 +3,7 @@ if (localStorage.getItem('token')) {
     loginButton.textContent = "Logout"
     loginButton.addEventListener("click", () => {
         localStorage.removeItem("token")
-        window.location.reload()
+        window.location = '/login.html'
     })
 } else {
     loginButton.textContent = "Login"
