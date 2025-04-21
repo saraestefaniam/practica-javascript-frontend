@@ -1,7 +1,8 @@
 export const buildAd = (ad) => {
+    const date = new Date(ad.updatedAt)
     const adView = `
-        <p>${ad.name}</p>
-        <p>${ad.price}</p>
+        <p>${date.toLocaleString()}</br>
+        ${ad.name} - $${ad.price}</p>
     `
     return adView
 }
