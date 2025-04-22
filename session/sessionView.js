@@ -6,5 +6,5 @@ export const unauthorizeSession = () => {
 
 export const authorizeSession = () => {
     return `
-    <p>You can <a href="./create-product.html">Create a product<a/> now </p>`
+    <h5>You can <a href="./create-product.html">Create a product<a/> now </h5>`
 }
