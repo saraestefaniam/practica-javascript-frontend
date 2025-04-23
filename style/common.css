@@ -55,3 +55,7 @@ button {
 img {
     width: 200px;
 }
+
+.ad {
+    border: 1px solid #000;
+}
