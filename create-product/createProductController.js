@@ -14,13 +14,21 @@ export const createAdController = (form) => {
         }
         
         try {
+            const event = new CustomEvent("load-create-product-started")
+            form.dispatchEvent(event)
             await createProduct(name, description, price, type, photo)
             setTimeout(() => {
                 window.location = '/'
             }, 2000);
 
         } catch (error) {
-            alert(error.message)
+            const event = new CustomEvent("load-create-product-error", {
+                detail: error.message
+            })
+            form.dispatchEvent(event)
+        } finally {
+            const event = new CustomEvent("load-create-product-finished")
+            form.dispatchEvent(event)
         }
     })
 }

@@ -20,5 +20,6 @@ export const createProduct = async (name, description, price, type, photo) => {
     if (!response.ok) {
         const data = response.json()
         throw new Error("Product could not be created")
+        
     }
 }

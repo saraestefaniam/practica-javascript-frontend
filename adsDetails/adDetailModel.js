@@ -36,9 +36,9 @@ export async function getLoggedInUserInfo() {
         }
     })
     
-    if(!response.ok) {
-        throw new Error("User doesn't exist")
-    }
+    //if(!response.ok) {
+      //  throw new Error("User doesn't exist")
+    //}
 
     const user = await response.json()
 

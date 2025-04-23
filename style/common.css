@@ -45,7 +45,6 @@ button {
     border-color: rgb(242, 8, 8);
 }
 
-
 .ads-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
