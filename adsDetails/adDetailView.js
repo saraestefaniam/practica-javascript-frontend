@@ -10,3 +10,10 @@ export const createAdDetailView = (ad) => {
 
     return adView
 }
+
+export const createRemoveButton = () => {
+    const removeButton = document.createElement("button")
+    removeButton.textContent = "Delete ad"
+
+    return removeButton
+}
