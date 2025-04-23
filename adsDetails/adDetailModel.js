@@ -20,6 +20,7 @@ export async function removeAd(adId) {
             "Authorization": `Bearer ${token}`
         }
     })
+    window.location = "/"
 
     if (!response.ok) {
         throw new Error("Ad not available")
