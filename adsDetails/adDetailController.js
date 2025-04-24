@@ -13,6 +13,9 @@ export const adDetailController = async (adContainer, adId) => {
         })
     }
 
+    const event = new CustomEvent("ad-detail-started")
+    adContainer.dispatchEvent(event)
+
     try {
         const adDetail = await adDetailModel(adId)
         adContainer.innerHTML = createAdDetailView(adDetail)
@@ -21,7 +24,14 @@ export const adDetailController = async (adContainer, adId) => {
         if (user.id === adDetail.userId) {
             showRemoveButton(adId)
         }
+
     } catch (error) {
-        alert(error.message)
+        const event = new CustomEvent("ad-detail-error", {
+            detail: error.message
+        })
+        adContainer.dispatchEvent(event)
+    } finally {
+        const event = new CustomEvent("ad-detail-finished")
+        adContainer.dispatchEvent(event)
     }
 }
