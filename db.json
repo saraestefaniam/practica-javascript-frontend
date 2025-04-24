@@ -1,0 +1,168 @@
+{
+  "users": [
+    {
+      "name": "Sara Morales",
+      "username": "sara@gmail.com",
+      "password": "$2b$10$1lNDOn5LX5emXC37uJmLG.BeI2iQRXqQ/dLd4D4wm5g0ecea4P3/.",
+      "id": 1
+    },
+    {
+      "name": "Juanita",
+      "username": "juanita@gmail.com",
+      "password": "$2b$10$i5FegKu3eIzOoSRNVccav.5b7ksMLDSVl8DMNHt/irOA4VnCkv7Lq",
+      "id": 2
+    },
+    {
+      "name": "Pedrito",
+      "username": "pedrito@gmail.com",
+      "password": "$2b$10$Vz0TTYhunJakm1gidQX3quo3XbsP7j0rz7fzb28yGNtM7RtQpuK.q",
+      "id": 3
+    },
+    {
+      "name": "Estefania",
+      "username": "estefania@gmail.com",
+      "password": "$2b$10$mTANQwpX.his.N9uEcsVqOSSJVITTXk03au5sBh/oq4p8plrSLDqK",
+      "id": 4
+    },
+    {
+      "name": "Carlitos",
+      "username": "carlitos@gmail.com",
+      "password": "$2b$10$LsoOt7YYGhZu2Umi/ZR/iOZULqjuuEDDAswkKR6dwQW7J3FiNk2QW",
+      "id": 5
+    },
+    {
+      "name": "Carmencita",
+      "username": "carmencita@gmail.com",
+      "password": "$2b$10$LsoOt7YYGhZu2Umi/ZR/iOZULqjuuEDDAswkKR6dwQW7J3FiNk2QW",
+      "id": 6
+    },
+    {
+      "name": "Fulanita",
+      "username": "fulanita@gmail.com",
+      "password": "$2b$10$FKI0DMoIvRS3D9N6ZL4BJ.XZOGBGDaBzsG9Dx1o.HclH.wXneznUK",
+      "id": 7
+    }
+  ],
+  "ads": [
+    {
+      "name": "treadmill",
+      "description": "Folding treadmill. Easy to storage. Practically new.",
+      "price": "150",
+      "type": "selling",
+      "photo": "https://images.unsplash.com/photo-1638183395699-2c0db5b6afbb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "userId": 1,
+      "updatedAt": "2025-04-21T21:23:17.736Z",
+      "id": 1
+    },
+    {
+      "name": "iPhone 15 Pro Max",
+      "description": "Practically new. All original components. Battery health at 95%, it lasts 2 days (with moderate use)",
+      "price": "800",
+      "type": "selling",
+      "photo": "https://s3.abcstatics.com/abc/www/multimedia/tecnologia/2023/09/25/iphone-15-pro-max-RDO8FNP3lE0U3uW8apDzgYI-1200x840@abc.jpg",
+      "userId": 2,
+      "updatedAt": "2025-04-22T16:38:37.535Z",
+      "id": 4
+    },
+    {
+      "name": "Rubik's Cube",
+      "description": "Rubik's Cube 4x4",
+      "price": "5",
+      "type": "selling",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhGUP-MBWWHP6JGebiqA8yQLyBIX75oWOZPg&s",
+      "userId": 2,
+      "updatedAt": "2025-04-22T16:45:40.707Z",
+      "id": 5
+    },
+    {
+      "name": "Electric Scooter",
+      "description": "I'm looking for a scooter. Mostly to commute. I don't care if it's used.",
+      "price": "250",
+      "type": "buying",
+      "photo": "https://st.depositphotos.com/2934765/53192/v/450/depositphotos_531920820-stock-illustration-photo-available-vector-icon-default.jpg",
+      "userId": 3,
+      "updatedAt": "2025-04-22T16:48:54.666Z",
+      "id": 6
+    },
+    {
+      "name": "Pokemon Cards",
+      "description": "Pack of 10. Each pack costs 15, you can order more than one pack if you want (ask for availability)",
+      "price": "15",
+      "type": "selling",
+      "photo": "https://m.media-amazon.com/images/I/81U+9QM-aqL._AC_SL1500_.jpg",
+      "userId": 3,
+      "updatedAt": "2025-04-22T16:53:20.944Z",
+      "id": 7
+    },
+    {
+      "name": "Apple Watch",
+      "description": "I'm looking for an apple watch. Any generation. Good conditions. All accessories ",
+      "price": "250",
+      "type": "buying",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq3TOKHnR9DZvHhLDhtVPvccksv-5hVGrZjg&s",
+      "userId": 1,
+      "updatedAt": "2025-04-23T02:48:28.759Z",
+      "id": 8
+    },
+    {
+      "name": "Vacuum Cleaner",
+      "description": "Vertical vacuum cleaner. 1,6L 220V. New, I never used it",
+      "price": "70",
+      "type": "selling",
+      "photo": "https://images.pexels.com/photos/9462147/pexels-photo-9462147.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "userId": 1,
+      "updatedAt": "2025-04-23T02:53:52.201Z",
+      "id": 9
+    },
+    {
+      "name": "Boots",
+      "description": "I'm looking for high-cut boots. Low heels. Size 38",
+      "price": "35",
+      "type": "buying",
+      "photo": "https://st.depositphotos.com/2934765/53192/v/450/depositphotos_531920820-stock-illustration-photo-available-vector-icon-default.jpg",
+      "userId": 4,
+      "updatedAt": "2025-04-23T02:59:29.637Z",
+      "id": 10
+    },
+    {
+      "name": "Lamp",
+      "description": "Floor lamp. Black. New",
+      "price": "100",
+      "type": "selling",
+      "photo": "https://images.pexels.com/photos/112811/pexels-photo-112811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "userId": 4,
+      "updatedAt": "2025-04-23T03:03:26.126Z",
+      "id": 11
+    },
+    {
+      "name": "Macbook",
+      "description": "I need a computer, I'm willing to pay up to $1.000. I'm looking for a Macbook specifically, if it's almost new and in excellent conditions I could pay more",
+      "price": "1000",
+      "type": "buying",
+      "photo": "https://st.depositphotos.com/2934765/53192/v/450/depositphotos_531920820-stock-illustration-photo-available-vector-icon-default.jpg",
+      "userId": 4,
+      "updatedAt": "2025-04-23T03:08:52.162Z",
+      "id": 12
+    },
+    {
+      "name": "Detective Comics #141",
+      "description": "Classic comic. Batman and Robin Golden Age from 1948. Spanish version",
+      "price": "600",
+      "type": "selling",
+      "photo": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXyI8TszvaDxJP5dkxxcy1mTJb-L7zxgIZvMkm_mbjDzKu1WY4DpFj2_pdsy6tgwXxviFtM43M9uw1cdlKkXDmObiRE1Sh4kSp3-ecYO77_BFKGl0PqoibIqzxoAftU6R4J1b1COQ943D_/s2048/01.jpg",
+      "userId": 4,
+      "updatedAt": "2025-04-23T03:17:51.122Z",
+      "id": 13
+    },
+    {
+      "name": "Headphones Soundcore",
+      "description": "Soundcore Anker Life Q20 Hybrid Active Noise Cancelling Headphones. Bluetooth. New",
+      "price": "40",
+      "type": "selling",
+      "photo": "https://m.media-amazon.com/images/I/51CnDMbXZzL.jpg",
+      "userId": 1,
+      "updatedAt": "2025-04-23T20:03:50.302Z",
+      "id": 15
+    }
+  ]
+}
