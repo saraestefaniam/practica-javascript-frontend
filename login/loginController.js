@@ -31,6 +31,10 @@ export function loginController(loginForm) {
     })
 
     const handleLoginUser = async (userEmail, password, loginForm) => {
+        const event = new CustomEvent("login-started")
+        loginForm.dispatchEvent(event)
+
+        loginForm.dispatchEvent(new CustomEvent("login-started"))
         try {
             const token = await loginUser(userEmail, password)
             const event = new CustomEvent("login-ok", {
@@ -45,9 +49,12 @@ export function loginController(loginForm) {
             }, 2000)
             localStorage.setItem("token", token)
         } catch (error) {
-            const event = new CustomeEvent("login-error", {
+            const event = new CustomEvent("login-error", {
                 detail: error
             })
+            loginForm.dispatchEvent(event)
+        } finally {
+            const event = new CustomEvent("login-end")
             loginForm.dispatchEvent(event)
         }
     }
