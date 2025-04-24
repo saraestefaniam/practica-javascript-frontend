@@ -27,7 +27,6 @@ document.addEventListener("DOMContentLoaded", () => {
         showNotification(event.detail)
     })
     
-
     if(adId) {
         adDetailController(adContainer, adId)
     } else {

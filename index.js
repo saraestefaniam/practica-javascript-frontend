@@ -25,7 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
     container.addEventListener('load-ads-error', (event) => {
         const errorMesage = event.detail;
         showNotification(errorMesage)
-        //container.innerHTML = `<div>${errorMesage}</div>`
     })
 
     notificationsController(notifications)
