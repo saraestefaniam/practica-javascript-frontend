@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
         show()
     })
     
-    loginForm.addEventListener("login-end", () =>{
+    loginForm.addEventListener("login-end", () => {
         hide()
     })
 
